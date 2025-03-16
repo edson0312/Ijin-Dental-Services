@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
+  <title>Medical History</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo logo"><img src="img/logo.jpg" alt="Ijin Dental Services"></a>
+        <div class="header__navigation">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="registration.html" class="menu__link">Register</a></li>
+              </ul>
+              <a href="back-office.html" class="actions-header__button">PRM</a>
+            </nav>
+          </div>
+          <div class="header__actions actions-header">
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="history">
+        <div class="history__container">
+          <h1 class="history__title">HISTORY</h1>
+          <p class="history__subtitle">(Please select correct answer)</p>
+
+          <form class="history__form" id="historyForm">
+            <div class="history__questions">
+              <!-- Question 1 -->
+              <div class="question__row">
+                <label class="question__label">1. Are you now under current medical treatment?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q1-yes" name="q1" value="yes">
+                    <label for="q1-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q1-no" name="q1" value="no">
+                    <label for="q1-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="question__row">
+                <label class="question__label">2. Has a physician informed you that you have or had:</label>
+              </div>
+
+              <!-- Sub-questions for Question 2 -->
+              <div class="question__subrow">
+                <label class="question__label">a) A heart ailment</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2a-yes" name="q2a" value="yes">
+                    <label for="q2a-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2a-no" name="q2a" value="no">
+                    <label for="q2a-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">b) High Blood Pressure</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2b-yes" name="q2b" value="yes">
+                    <label for="q2b-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2b-no" name="q2b" value="no">
+                    <label for="q2b-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">c) Diabetes</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2c-yes" name="q2c" value="yes">
+                    <label for="q2c-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2c-no" name="q2c" value="no">
+                    <label for="q2c-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">d) Rheumatic Fever</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2d-yes" name="q2d" value="yes">
+                    <label for="q2d-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2d-no" name="q2d" value="no">
+                    <label for="q2d-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">e) Lung Disease</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2e-yes" name="q2e" value="yes">
+                    <label for="q2e-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2e-no" name="q2e" value="no">
+                    <label for="q2e-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">f) Tumors or growths</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2f-yes" name="q2f" value="yes">
+                    <label for="q2f-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2f-no" name="q2f" value="no">
+                    <label for="q2f-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">g) Any liver disease</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2g-yes" name="q2g" value="yes">
+                    <label for="q2g-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2g-no" name="q2g" value="no">
+                    <label for="q2g-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">h) Any kidney disease</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2h-yes" name="q2h" value="yes">
+                    <label for="q2h-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2h-no" name="q2h" value="no">
+                    <label for="q2h-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">i) Any blood disease</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2i-yes" name="q2i" value="yes">
+                    <label for="q2i-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2i-no" name="q2i" value="no">
+                    <label for="q2i-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__subrow">
+                <label class="question__label">j) Stomach or intestinal disease</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q2j-yes" name="q2j" value="yes">
+                    <label for="q2j-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q2j-no" name="q2j" value="no">
+                    <label for="q2j-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Questions 3-14 -->
+              <div class="question__row">
+                <label class="question__label">3. Have you had any major operations? If so what?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q3-yes" name="q3" value="yes">
+                    <label for="q3-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q3-no" name="q3" value="no">
+                    <label for="q3-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">4. Do you have night sweats, coughs and weight loss?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q4-yes" name="q4" value="yes">
+                    <label for="q4-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q4-no" name="q4" value="no">
+                    <label for="q4-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">5. Are you allergic to any food or medicine resulting in hives, asthma, eczema, etc?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q5-yes" name="q5" value="yes">
+                    <label for="q5-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q5-no" name="q5" value="no">
+                    <label for="q5-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">6. Are you taking any drugs or medication?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q6-yes" name="q6" value="yes">
+                    <label for="q6-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q6-no" name="q6" value="no">
+                    <label for="q6-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">7. Are you on any kind of special diet?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q7-yes" name="q7" value="yes">
+                    <label for="q7-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q7-no" name="q7" value="no">
+                    <label for="q7-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">8. Do you experience shortness of breath when climbing stairs?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q8-yes" name="q8" value="yes">
+                    <label for="q8-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q8-no" name="q8" value="no">
+                    <label for="q8-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">9. Do your ankles swell?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q9-yes" name="q9" value="yes">
+                    <label for="q9-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q9-no" name="q9" value="no">
+                    <label for="q9-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">10. Have you experienced any complication with healing?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q10-yes" name="q10" value="yes">
+                    <label for="q10-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q10-no" name="q10" value="no">
+                    <label for="q10-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">11. Are you in good general health at this time?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q11-yes" name="q11" value="yes">
+                    <label for="q11-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q11-no" name="q11" value="no">
+                    <label for="q11-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">12. Are you pregnant? If so, how many months?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q12-yes" name="q12" value="yes">
+                    <label for="q12-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q12-no" name="q12" value="no">
+                    <label for="q12-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">13. Have you experienced profuse bleeding after tooth extraction?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q13-yes" name="q13" value="yes">
+                    <label for="q13-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q13-no" name="q13" value="no">
+                    <label for="q13-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="question__row">
+                <label class="question__label">14. Are you anemic?</label>
+                <div class="question__options">
+                  <div class="radio-option">
+                    <input type="radio" id="q14-yes" name="q14" value="yes">
+                    <label for="q14-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="q14-no" name="q14" value="no">
+                    <label for="q14-no">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__consent">
+              <p class="consent__text">
+                I, <input type="text" class="consent-name" placeholder="Full Name">, do hereby consent to the performance upon 
+                <label><input type="checkbox" name="consent-self"> myself</label>
+                <label><input type="checkbox" name="consent-spouse"> spouse</label>
+                <label><input type="checkbox" name="consent-son"> son</label>
+                <label><input type="checkbox" name="consent-daughter"> daughter</label>
+                <label><input type="checkbox" name="consent-others"> others</label>
+                of all dental procedures operations and/or treatment that may be considered necessary to restore my oral and dental health.
+              </p>
+              
+              <p class="consent__disclaimer">
+                This consent is given voluntarily and whatever result of any intervention or treatment may be, I absolve my dentist from liability. 
+                Be it known further, that I'm willing to pay for all services rendered to me and/or my family.
+              </p>
+              
+              <div class="signature-row">
+                <div class="signature-field">
+                  <label>WITNESS</label>
+                  <input type="text">
+                </div>
+                <div class="signature-field">
+                  <label>SIGNATURE</label>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="history__form-buttons">
+              <a href="#" class="history__back button button--outline" onclick="handleBackButton(); return false;">Back</a>
+              <button type="button" class="history__submit button" onclick="goToDentalChart(event)">Next</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
+        <a href="" class="footer__logo logo"><img src="img/logo.jpg" alt="Ijin Dental Services"></a>
+        <div class="footer__copyright">Copyright © 2025 LOGO – All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html> 

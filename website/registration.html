@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
+  <title>Patient Registration</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo logo"><img src="img/logo.jpg" alt="Ijin Dental Services"></a>
+        <div class="header__navigation">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="registration.html" class="menu__link">Register</a></li>
+              </ul>
+              <a href="back-office.html" class="actions-header__button">PRM</a>
+            </nav>
+          </div>
+          <div class="header__actions actions-header">
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="registration">
+        <div class="registration__container">
+          <h1 class="registration__title">ACQUAINTANCE FORM</h1>
+          <p class="registration__subtitle">(All confidential)</p>
+
+          <form class="registration__form" id="registrationForm" onsubmit="goToHistory(event)">
+            <div class="form__personal-info">
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="patient-name">Name of Patient</label>
+                  <input type="text" id="patient-name" name="patient-name">
+                </div>
+                <div class="form__field form__status">
+                  <label>Status:</label>
+                  <div class="radio-group">
+                    <input type="radio" id="single" name="status" value="single">
+                    <label for="single">Single</label>
+                    <input type="radio" id="married" name="status" value="married">
+                    <label for="married">Married</label>
+                    <input type="radio" id="widow" name="status" value="widow">
+                    <label for="widow">Widow</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="birth-date">Date of Birth</label>
+                  <input type="date" id="birth-date" name="birth-date">
+                </div>
+                <div class="form__field">
+                  <label>HMO Card Holder</label>
+                  <div class="radio-group">
+                    <input type="radio" id="hmo-yes" name="hmo" value="yes">
+                    <label for="hmo-yes">Yes</label>
+                    <input type="radio" id="hmo-no" name="hmo" value="no">
+                    <label for="hmo-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="occupation">Occupation</label>
+                  <input type="text" id="occupation" name="occupation">
+                </div>
+                <div class="form__field">
+                  <label for="hmo-details">If Yes, What?</label>
+                  <input type="text" id="hmo-details" name="hmo-details">
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="residence">Residence</label>
+                  <input type="text" id="residence" name="residence">
+                </div>
+                <div class="form__field">
+                  <label for="tel-residence">Tel. No.</label>
+                  <input type="tel" id="tel-residence" name="tel-residence">
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="business-address">Business Address</label>
+                  <input type="text" id="business-address" name="business-address">
+                </div>
+                <div class="form__field">
+                  <label for="tel-business">Tel. No.</label>
+                  <input type="tel" id="tel-business" name="tel-business">
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="physician">Family Physician</label>
+                  <input type="text" id="physician" name="physician">
+                </div>
+                <div class="form__field">
+                  <label for="tel-physician">Tel. No.</label>
+                  <input type="tel" id="tel-physician" name="tel-physician">
+                </div>
+              </div>
+            </div>
+
+            <div class="form__additional-info">
+              <div class="form__field">
+                <label for="former-dentist">Former Dentist</label>
+                <input type="text" id="former-dentist" name="former-dentist">
+              </div>
+
+              <div class="form__field">
+                <label for="last-visit">Date of Last Visit to the Dentist</label>
+                <input type="date" id="last-visit" name="last-visit">
+              </div>
+
+              <div class="form__field">
+                <label for="visit-purpose">Purpose of Visit</label>
+                <input type="text" id="visit-purpose" name="visit-purpose">
+              </div>
+
+              <div class="form__field">
+                <label for="parents-name">Parents Name (if child)</label>
+                <input type="text" id="parents-name" name="parents-name">
+              </div>
+
+              <div class="form__field">
+                <label for="payment-person">Person responsible for payment of Account (if patient, mark same)</label>
+                <input type="text" id="payment-person" name="payment-person">
+              </div>
+
+              <div class="form__field">
+                <label for="referral">Who may we thank for referring you to this clinic?</label>
+                <input type="text" id="referral" name="referral">
+              </div>
+            </div>
+
+            <button type="submit" class="form__submit button">Next</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
+        <a href="" class="footer__logo logo"><img src="img/logo.jpg" alt="Ijin Dental Services"></a>
+        <div class="footer__copyright">Copyright © 2025 LOGO – All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html> 
